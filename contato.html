@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="menu">
-      <h1><img src="img/logo.png" height="100px"></h1>
+      <h1><img class="img-logo" src="img/logo.png" alt="Logo da Barbearia"></h1>
 
       <nav>
         <ul>
@@ -28,46 +28,70 @@
   <main>
     <form action="">
       <label for="nomecompleto">Nome completo</label>
-      <input type="text" id="nomecompleto" class="input-padrao">
+      <input type="text" id="nomecompleto" class="input-padrao" placeholder="Fulano de Tal" required>
 
       <label for="email">E-mail</label>
-      <input type="text" id="email" class="input-padrao">
+      <input type="email" id="email" class="input-padrao" placeholder="fulanodetal@gmail.com" required>
 
       <label for="telefone">Telefone</label>
-      <input type="text" id="telefone" class="input-padrao">
+      <input type="tel" id="telefone" class="input-padrao" placeholder="(00) 00000-0000" required>
 
       <label for="mensagem">Mensagem</label>
-      <textarea name="" id="" cols="30" rows="10" class="input-padrao"></textarea>
+      <textarea name="" id="" cols="30" rows="10" class="input-padrao" required></textarea>
 
-      <div>
-        <p>Como deseja entrar em contato?</p>
+      <fieldset>
+        <legend>Como deseja entrar em contato?</legend>
         <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
 
         <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
             id="radio-telefone">Telefone</label>
 
-        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp"
-            id="radio-whatsapp">WhatsApp</label>
-      </div>
+        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+            checked>WhatsApp</label>
+      </fieldset>
 
-      <div>
-        <p>Qual sua preferência de horário?</p>
+      <fieldset>
+        <legend>Qual sua preferência de horário?</legend>
         <select name="" id="" class="option">
           <option value="">Manhã</option>
           <option value="">Tarde</option>
           <option value="">Noite</option>
         </select>
-      </div>
+      </fieldset>
 
-      <label for="" class="checkbox"><input type="checkbox" name="" id="">Gostario de receber as nossas novidades por
+      <label for="" class="checkbox"><input type="checkbox" name="" id="" checked>Gostario de receber as nossas
+        novidades por
         email?</label>
 
-      <input type="submit" name="contato" value="Enviar Formulário">
+      <input type="submit" name="contato" value="Enviar Formulário" class="enviar">
     </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Dia</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Segunda</td>
+          <td>08h ~20h</td>
+        </tr>
+        <tr>
+          <td>Quarta</td>
+          <td>08h ~20h</td>
+        </tr>
+        <tr>
+          <td>Sexta</td>
+          <td>08h ~20h</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
 
   <footer>
-    <img class="img-footer" src="img/logo.png" alt="">
+    <img class="img-footer" src="img/logo.png" alt="Logo da Barbearia">
     <p class="copyright">&copy; Copyright Barberia Coliseu - 2023</p>
   </footer>
 </body>
